@@ -22,7 +22,7 @@ public class PlaygroundApplication {
 	@Bean
 	public CommandLineRunner demo(GameNameRepository repository) {
 		return (args) -> {
-			// save a couple of customers
+			// save a couple of games
 			repository.save(new VideoGame("Legend of Zelda: Breath of the Wild", "Action/Adventure", "Nintendo Switch"));
 			repository.save(new VideoGame("Diablo II", "Action RPG", "PC"));
 			repository.save(new VideoGame("Minecraft", "Sandbox/Creative", "Playstation 4"));
